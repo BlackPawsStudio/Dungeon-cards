@@ -1,0 +1,15 @@
+@media (max-width: 450px) {
+  h1{
+    font-size: 20px;
+  }
+  main{
+    width: 300px;
+    height: 400px;
+    background-color: #444;
+  }
+  .card{
+    border-width: 5px!important;
+    width: calc(86px - 7px)!important;
+    height: calc(104px - 9px)!important;
+  }
+}
