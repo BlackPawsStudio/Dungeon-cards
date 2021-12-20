@@ -1,9 +1,9 @@
-import hero from './assets/images/hero.png'
-import hp0 from './assets/images/hp0.png'
-import hp1 from './assets/images/hp1.png'
-import foe1 from './assets/images/foe1.png'
-import foe2 from './assets/images/foe2.png'
-import foe3 from './assets/images/foe3.png'
+import hero from './assets/images/hero.svg'
+import hp0 from './assets/images/hp0.svg'
+import hp1 from './assets/images/hp1.svg'
+import foe1 from './assets/images/foe1.svg'
+import foe2 from './assets/images/foe2.svg'
+import foe3 from './assets/images/foe3.svg'
 import { Images } from './types'
 
 export const images:Images = {

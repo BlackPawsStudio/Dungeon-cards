@@ -9,7 +9,7 @@
 .card{
   margin: auto auto;
   width: calc(120px - 14px);
-  height: calc(142px - 14px);
+  height: 85%;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -32,6 +32,7 @@
 .card-hero{
   background-color: rgb(109, 111, 71);
   border: 7px solid rgb(191, 163, 6);
+  z-index: 5;
 }
 .card-foe{
   background-color: rgb(111, 71, 71);
@@ -43,7 +44,7 @@
   
 }
 .card-image{
-  transform: scale(300%);
+  transform: scale(120%);
   margin-bottom: 30px;
 }
 .card-text{
