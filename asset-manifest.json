@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.4f9b5500.chunk.css",
+    "main.js": "./static/js/main.cd49864b.chunk.js",
+    "main.js.map": "./static/js/main.cd49864b.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.cbae025d.js",
+    "runtime-main.js.map": "./static/js/runtime-main.cbae025d.js.map",
+    "static/js/2.83552c46.chunk.js": "./static/js/2.83552c46.chunk.js",
+    "static/js/2.83552c46.chunk.js.map": "./static/js/2.83552c46.chunk.js.map",
+    "static/js/3.b135dd0a.chunk.js": "./static/js/3.b135dd0a.chunk.js",
+    "static/js/3.b135dd0a.chunk.js.map": "./static/js/3.b135dd0a.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.4f9b5500.chunk.css.map": "./static/css/main.4f9b5500.chunk.css.map",
+    "static/js/2.83552c46.chunk.js.LICENSE.txt": "./static/js/2.83552c46.chunk.js.LICENSE.txt",
+    "static/media/foe1.c477179c.svg": "./static/media/foe1.c477179c.svg",
+    "static/media/foe2.91be41a9.svg": "./static/media/foe2.91be41a9.svg",
+    "static/media/foe3.b4c66bde.svg": "./static/media/foe3.b4c66bde.svg",
+    "static/media/index.css": "./static/media/font.82f7ff73.TTF",
+    "static/media/hero.5b2609bc.svg": "./static/media/hero.5b2609bc.svg",
+    "static/media/hp0.013dd3c2.svg": "./static/media/hp0.013dd3c2.svg",
+    "static/media/hp1.17d3ee61.svg": "./static/media/hp1.17d3ee61.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbae025d.js",
+    "static/js/2.83552c46.chunk.js",
+    "static/css/main.4f9b5500.chunk.css",
+    "static/js/main.cd49864b.chunk.js"
+  ]
+}
