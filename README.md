@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# DUNGEON CARDS GAME
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an adaptation of android game [Dungeon cards](https://play.google.com/store/apps/details?id=com.The717pixels.DungeonCards&hl=ru&gl=US).
 
-## Available Scripts
+Here you play as a brave knight fighting against monsters. You can walk horizontally and vertically only to the closest cards.
+If you tap on a monster, you will lose as much hp as the monster has.
+If you tap on a health potion, you will recieve as much hp as the potion has.
+You must keep your health above 0 or you will lose!
 
-In the project directory, you can run:
+![image](https://res.cloudinary.com/dkfwehxio/image/upload/v1640021553/Screenshot_2021-12-20_203223_vbdi0c.png)
 
-### `yarn start`
+You can try this game yourself in [application demo](https://blackpawsstudio.github.io/Dominoes-tech-challenge/)!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# SETUP and USAGE
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The steps below will take you through cloning your own fork, installing dependencies and building:
 
-### `yarn test`
+1. Fork and/or clone this repository. To use Git from command line, see the [Setting up Git](https://help.github.com/articles/set-up-git/) and [Fork repo](https://help.github.com/articles/fork-a-repo/) articles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/BlackPawsStudio/Dungeon-cards/
+```
 
-### `yarn build`
+2. Open your copied repo folder in terminal and install necessary modules with command, make sure that you have installed [npm](https://www.npmjs.com/get-npm):
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Now you are able to run or build the project:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the project write `npm run` in terminal and live development server will open.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Run `npm run build` to build the project. The build files will be stored in the `dist/` directory. 
+You can go to the `dist/` directory and open `index.html` file to see the results.
