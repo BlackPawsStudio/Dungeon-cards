@@ -23,7 +23,7 @@ export const AIButton = () => {
       else
         console.log('pizda');
         
-    }, 10)
+    }, 1000)
   }
 
   const startPlaying = async () => {
