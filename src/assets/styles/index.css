@@ -55,3 +55,28 @@ main{
 main::-webkit-scrollbar {
   display: none;
 }
+.stats{
+  margin: 10px 0;
+  text-align: center;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+}
+.ai-button{
+  background: none;
+  padding: 3px 10px;
+  border: 4px solid #aaa;
+  transition: all .3s;
+  cursor: pointer
+}
+.ai-button:hover{
+  transform: scale(110%);
+}
+.ai-button:active{
+  transform: scale(97%);
+}
+.ai-button:disabled{
+  background-color: #40784b;
+  color: darkgreen;
+  border-color: darkgreen;
+}

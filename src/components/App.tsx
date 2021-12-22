@@ -10,7 +10,7 @@ function App() {
     <Provider store={store}>
       <div className="root">
         <header>
-          <h1>Dungeon Cards</h1>
+          <h1>Dungeon Cards AI</h1>
         </header>
         <main>
             <Stats />

@@ -13,6 +13,7 @@ const defaultHero:Card = {
 const cardsSlice = createSlice({
   name: 'cards',
   initialState: {
+    isAIEnabled: false,
     cards: Array(3).fill([]),
     scoreCount: 0,
     hero: defaultHero,
@@ -21,6 +22,7 @@ const cardsSlice = createSlice({
   reducers: {
     initFill(state:State) {
       let idCounter = -1
+      state.isAIEnabled = false
       state.scoreCount = 0
       state.hero = defaultHero
       for (let i = 0; i < 3; i++) {
@@ -41,6 +43,7 @@ const cardsSlice = createSlice({
   
         if (state.hero.hp <= 0) {
           alert(`Game over! Your score ${state.scoreCount}`)
+          state.isAIEnabled = false
           state.isGameOver = true
         }
 
@@ -50,11 +53,14 @@ const cardsSlice = createSlice({
         
         state.cards = shiftCards(state.cards, state.hero, clickedCard); 
 
-        state.hero = state.cards.flat().find((el:Card) => el.type === 'hero') as Card
+        state.hero = state.cards.flat().find((el:Card) => el.type === 'hero') as Card        
       }
+    },
+    enableAI(state:State) {
+      state.isAIEnabled = true
     }
   }
 })
 
 export default cardsSlice.reducer
-export const {initFill, move} = cardsSlice.actions
+export const {initFill, move, enableAI} = cardsSlice.actions

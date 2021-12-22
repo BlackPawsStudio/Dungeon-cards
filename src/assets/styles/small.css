@@ -9,7 +9,10 @@
   }
   .card{
     border-width: 5px!important;
-    width: calc(86px - 7px)!important;
-    height: calc(104px - 9px)!important;
+    width: 90px!important;
+    height: 105px!important;
+  }
+  .ai-button{
+    padding: 3px 5px;
   }
 }

@@ -7,6 +7,7 @@ export interface Card {
 }
 
 export interface State {
+  isAIEnabled: boolean,
   cards: Card[][],
   scoreCount: number,
   hero: Card,
@@ -21,4 +22,9 @@ export type Images = {
   [key in CardTypes]: {
     [key: number]: string 
   }
+}
+
+export interface HealsByCard {
+  id: number,
+  amount: number 
 }

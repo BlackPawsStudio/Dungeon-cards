@@ -29,7 +29,7 @@ export const shiftCards = (cards:Card[][], hero:Card, clickedCard:Card) => {
     newCards[hero.x][hero.y].hp = lastRowEl.hp
   }
   
-  const newCard = getRandomCard(lastRowEl.id, [lastRowEl.x, lastRowEl.y], 2)
+  const newCard = getRandomCard(lastRowEl.id, [lastRowEl.x, lastRowEl.y], 3)
   
   lastRowEl.type = newCard.type;
   lastRowEl.hp = newCard.hp;

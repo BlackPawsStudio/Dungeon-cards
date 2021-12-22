@@ -8,8 +8,8 @@
 }
 .card{
   margin: auto auto;
-  width: calc(120px - 14px);
-  height: 85%;
+  width: 115px;
+  height: 95%;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -25,21 +25,17 @@
   transition: all .3s;
   transform: scale(97%);
 }
-.stats{
-  padding: 5px 0;
-  text-align: center;
-}
 .card-hero{
-  background-color: rgb(109, 111, 71);
+  background-color: #6d6f47;
   border: 7px solid rgb(191, 163, 6);
   z-index: 5;
 }
 .card-foe{
-  background-color: rgb(111, 71, 71);
+  background-color: #6f4747;
   border: 7px solid darkred;
 }
 .card-heal{
-  background-color: rgb(71, 111, 79);
+  background-color: #476f4f;
   border: 7px solid darkgreen;
   
 }
