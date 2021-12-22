@@ -75,7 +75,7 @@ main::-webkit-scrollbar {
 .ai-button:active{
   transform: scale(97%);
 }
-.ai-button:disabled{
+.ai-active{
   background-color: #40784b;
   color: darkgreen;
   border-color: darkgreen;

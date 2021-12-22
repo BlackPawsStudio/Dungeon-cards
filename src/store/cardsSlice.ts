@@ -58,9 +58,12 @@ const cardsSlice = createSlice({
     },
     enableAI(state:State) {
       state.isAIEnabled = true
+    },
+    disableAI(state:State) {
+      state.isAIEnabled = false
     }
   }
 })
 
 export default cardsSlice.reducer
-export const {initFill, move, enableAI} = cardsSlice.actions
+export const {initFill, move, enableAI, disableAI} = cardsSlice.actions

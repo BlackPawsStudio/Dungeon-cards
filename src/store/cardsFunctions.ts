@@ -2,7 +2,6 @@ import { Card, Coords } from "../types";
 
 export const isAvailable = ([clickedX, clickedY]:Coords, [heroX, heroY]:Coords):boolean => {
   if (heroX === clickedX && heroY === clickedY) {
-    alert('It\'s you dum!')
     return false
   }
   return ((heroX + 1 === clickedX || 
@@ -29,7 +28,7 @@ export const shiftCards = (cards:Card[][], hero:Card, clickedCard:Card) => {
     newCards[hero.x][hero.y].hp = lastRowEl.hp
   }
   
-  const newCard = getRandomCard(lastRowEl.id, [lastRowEl.x, lastRowEl.y], 3)
+  const newCard = getRandomCard(lastRowEl.id, [lastRowEl.x, lastRowEl.y], 2)
   
   lastRowEl.type = newCard.type;
   lastRowEl.hp = newCard.hp;

@@ -1,5 +1,5 @@
 import { countCard } from '../AI/aiFunctions';
-import { move, enableAI } from '../store/cardsSlice';
+import { move, enableAI, disableAI } from '../store/cardsSlice';
 import { useAppDispatch, useAppSelector } from "../store/hooks"
 import { useEffect } from 'react';
 
@@ -18,16 +18,14 @@ export const AIButton = () => {
   const aiMove = () => {
     setTimeout(() => {
       const cardToPlay = countCard(hero, cards);
-      if (cardToPlay)      
-        dispatch(move([cardToPlay.x, cardToPlay.y]))
-      else
-        console.log('pizda');
-        
+      console.log(cardToPlay);
+      
+      dispatch(move([cardToPlay.x, cardToPlay.y]))
     }, 1000)
   }
 
   const startPlaying = async () => {
-    dispatch(enableAI())
+    isAIEnabled ? dispatch(disableAI()) : dispatch(enableAI())
 
     aiMove()
   }
@@ -35,10 +33,9 @@ export const AIButton = () => {
   return (
     <>
       <button 
-        className="ai-button"
-        onClick={() => {startPlaying()}}
-        disabled={isAIEnabled}>
-        Enable auto play
+        className={`ai-button ${isAIEnabled ? 'ai-active' : ''}`}
+        onClick={() => {startPlaying()}}>
+        {isAIEnabled ? 'Disable auto play' : 'Enable auto play'}
       </button>
     </>
   )

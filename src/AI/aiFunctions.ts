@@ -48,7 +48,23 @@ const countOptimalByHp = (availableCards:Card[], cards:Card[][], alternative:Car
     return alternative
   } 
   
-  const cardWithMoreHeals = availableCards.find(el => el.id === healsOnCards[0].id) as Card
+  const allVariantsByHP = healsOnCards.filter(el => el.amount === healsOnCards[0].amount)
+
+  const optimalFoes = allVariantsByHP.map(variant => {
+    return availableCards.find(card => card.id === variant.id) as Card
+  }).sort((a:Card, b:Card) => {
+    if (a.hp < b.hp) {
+      return -1
+    } 
+    return 1
+  })  
+  
+  console.log(JSON.stringify(optimalFoes) + '\n\r\n\r');
+
+  const cardWithMoreHeals = optimalFoes[0]
+
+  console.log(cardWithMoreHeals, ' | ', alternative);
+  
 
   if (cardWithMoreHeals.hp < hero.hp) {
     return cardWithMoreHeals
