@@ -1,13 +1,15 @@
 # DUNGEON CARDS GAME
 
-This is an adaptation of android game [Dungeon cards](https://play.google.com/store/apps/details?id=com.The717pixels.DungeonCards&hl=ru&gl=US).
+This is an adaptation of android game [Dungeon cards](https://play.google.com/store/apps/details?id=com.The717pixels.DungeonCards&hl=ru&gl=US) and implementation of autoplay algorithm.
 
 Here you play as a brave knight fighting against monsters. You can walk horizontally and vertically only to the closest cards.
 If you tap on a monster, you will lose as much hp as the monster has.
 If you tap on a health potion, you will recieve as much hp as the potion has.
 You must keep your health above 0 or you will lose!
 
-![image](https://res.cloudinary.com/dkfwehxio/image/upload/v1640021553/Screenshot_2021-12-20_203223_vbdi0c.png)
+You can press `Enable auto play` button to make computer play instead of you and then press again to disable algorithm, 
+
+![image](https://res.cloudinary.com/dkfwehxio/image/upload/v1640197618/Screenshot_2021-12-22_212625_vmwiqm.png)
 
 You can try this game yourself in [application demo](https://blackpawsstudio.github.io/Dominoes-tech-challenge/)!
 
