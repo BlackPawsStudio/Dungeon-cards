@@ -1,4 +1,4 @@
-import { countCard } from '../AI/aiFunctions';
+import { countCard } from '../ai/optimalCard';
 import { move, enableAI, disableAI } from '../store/cardsSlice';
 import { useAppDispatch, useAppSelector } from "../store/hooks"
 import { useEffect } from 'react';
