@@ -4,6 +4,7 @@ import { CardsPlace } from "./Cards";
 import { Stats } from "./Stats";
 import { Provider } from "react-redux";
 import { store } from "../store/store";
+import { Settings } from "./Settings";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         </header>
         <main>
             <Stats />
+            <Settings />
             <CardsPlace />
         </main>
         <footer>

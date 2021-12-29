@@ -49,7 +49,6 @@ main{
   background-color: #444;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
   overflow: auto;
 }
 main::-webkit-scrollbar {
@@ -79,4 +78,33 @@ main::-webkit-scrollbar {
   background-color: #40784b;
   color: darkgreen;
   border-color: darkgreen;
+}
+.settings{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  padding-bottom: 5px;
+  user-select: none;
+}
+.settings__input{
+  width: 60%;
+  -webkit-appearance: none;
+  background: none;
+}
+.settings__input::-webkit-slider-runnable-track{
+  height: 5px;
+  background-color: #aaa;
+}
+.settings__input::-webkit-slider-thumb{
+  transition: all .3s;
+  -webkit-appearance: none;
+  transform: translateY(-7px);
+  width: 10px;
+  height: 20px;
+  background-color: #444;
+  border: 3px solid #aaa
+}
+.settings__input:active::-webkit-slider-thumb{
+  background-color: #aaa;
 }

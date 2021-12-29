@@ -11,7 +11,8 @@ export interface State {
   cards: Card[][],
   scoreCount: number,
   hero: Card,
-  isGameOver: boolean
+  isGameOver: boolean,
+  botSpeed: number
 }
 
 export type Coords = [number, number]

@@ -42,6 +42,7 @@
 .card-image{
   transform: scale(120%);
   margin-bottom: 30px;
+  user-select: none;
 }
 .card-text{
   position: absolute;

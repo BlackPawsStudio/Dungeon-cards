@@ -6,7 +6,7 @@ const countAlternative = (minFoe:Card | null, minHeal:Card | null, hero:Card):Ca
     if (!minFoe) {                    //  Pick lowest heal if there're no foes
       return minHeal
     } 
-    if (hero.hp > minFoe.hp * 2) {    //  Check if it's needed to heal
+    if (hero.hp > minFoe.hp + 3) {    //  Check if it's needed to heal
       return minFoe
     }
     return minHeal

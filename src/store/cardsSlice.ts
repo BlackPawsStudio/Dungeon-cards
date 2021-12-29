@@ -17,7 +17,8 @@ const cardsSlice = createSlice({
     cards: Array(3).fill([]),
     scoreCount: 0,
     hero: defaultHero,
-    isGameOver: true
+    isGameOver: true,
+    botSpeed: 1000,
   },
   reducers: {
     initFill(state:State) {
@@ -51,7 +52,7 @@ const cardsSlice = createSlice({
           state.scoreCount++
         }
         
-        state.cards = shiftCards(state.cards, state.hero, clickedCard); 
+        state.cards = shiftCards(state.cards, state.hero, clickedCard, state.scoreCount); 
 
         state.hero = state.cards.flat().find((el:Card) => el.type === 'hero') as Card        
       }
@@ -61,9 +62,12 @@ const cardsSlice = createSlice({
     },
     disableAI(state:State) {
       state.isAIEnabled = false
+    },
+    changeSpeed(state:State, {payload}) {
+      state.botSpeed = 1000 - payload
     }
   }
 })
 
 export default cardsSlice.reducer
-export const {initFill, move, enableAI, disableAI} = cardsSlice.actions
+export const {initFill, move, enableAI, disableAI, changeSpeed} = cardsSlice.actions

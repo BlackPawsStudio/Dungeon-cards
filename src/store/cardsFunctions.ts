@@ -10,7 +10,7 @@ export const isAvailable = ([clickedX, clickedY]:Coords, [heroX, heroY]:Coords):
         heroY - 1 === clickedY) && heroX === clickedX)
 }
 
-export const shiftCards = (cards:Card[][], hero:Card, clickedCard:Card) => {
+export const shiftCards = (cards:Card[][], hero:Card, clickedCard:Card, score:number) => {
   const newCards:Card[][] = cards.concat()
 
   const rowType = hero.x === clickedCard.x ? 'x' : 'y';
@@ -28,7 +28,7 @@ export const shiftCards = (cards:Card[][], hero:Card, clickedCard:Card) => {
     newCards[hero.x][hero.y].hp = lastRowEl.hp
   }
   
-  const newCard = getRandomCard(lastRowEl.id, [lastRowEl.x, lastRowEl.y], 2)
+  const newCard = getRandomCard(lastRowEl.id, [lastRowEl.x, lastRowEl.y], 3)
   
   lastRowEl.type = newCard.type;
   lastRowEl.hp = newCard.hp;
@@ -37,13 +37,13 @@ export const shiftCards = (cards:Card[][], hero:Card, clickedCard:Card) => {
 }
 
 export const getRandomCard = (id:number, [x, y]:[number, number], range:number):Card => {
-  const chance = Math.random() * 8;
+  const chance = Math.random() * 8 > range;
   return { 
     id: id,
     x: x,
     y: y,
-    type: chance > range ? 'foe' : 'heal',
-    hp: chance > range ? Math.trunc(Math.random() * (4 - 1) + 1) : 
+    type: chance ? 'foe' : 'heal',
+    hp: chance ? Math.trunc(Math.random() * (4 - 1) + 1) : 
     Math.trunc(Math.random() * (9 - 5) + 5)
   }
 }

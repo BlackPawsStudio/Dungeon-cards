@@ -4,8 +4,14 @@ import { useAppDispatch, useAppSelector } from "../store/hooks"
 import { useEffect } from 'react';
 
 export const AIButton = () => {
-  const {cards, isGameOver, hero, isAIEnabled} = useAppSelector(({cardSlice: toolkit}) => {
-    return {cards: toolkit.cards, isGameOver: toolkit.isGameOver, hero: toolkit.hero, isAIEnabled: toolkit.isAIEnabled}
+  const {cards, isGameOver, hero, isAIEnabled, botSpeed} = useAppSelector(({cardSlice: toolkit}) => {
+    return {
+      cards: toolkit.cards, 
+      isGameOver: toolkit.isGameOver, 
+      hero: toolkit.hero, 
+      isAIEnabled: toolkit.isAIEnabled,
+      botSpeed: toolkit.botSpeed,
+    }
   })
   const dispatch = useAppDispatch()
 
@@ -18,10 +24,9 @@ export const AIButton = () => {
   const aiMove = () => {
     setTimeout(() => {
       const cardToPlay = countCard(hero, cards);
-      console.log(cardToPlay);
       
       dispatch(move([cardToPlay.x, cardToPlay.y]))
-    }, 1000)
+    }, botSpeed)
   }
 
   const startPlaying = async () => {
